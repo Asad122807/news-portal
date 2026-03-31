@@ -1,16 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spring26.section2.group14.newsportal.Asad.EdashboardController">
+<AnchorPane prefHeight="641.0" prefWidth="853.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spring26.section2.group14.newsportal.Asad.EdashboardController">
    <children>
-      <Text layoutX="211.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Editor Dashboard" textAlignment="CENTER">
+      <Text layoutX="314.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Editor Dashboard" textAlignment="CENTER">
          <font>
             <Font size="24.0" />
          </font>
       </Text>
+      <Button layoutX="69.0" layoutY="110.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="223.0" text="Review Submitted Articles" />
+      <Button layoutX="69.0" layoutY="195.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="223.0" text="Edit Article Content " />
+      <Button layoutX="69.0" layoutY="283.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="223.0" text="Approve Article " />
+      <Button layoutX="69.0" layoutY="368.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="223.0" text="Reject Article " />
+      <Button layoutX="488.0" layoutY="110.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="223.0" text="Assign Headline " />
+      <Button layoutX="488.0" layoutY="180.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="223.0" text="Schedule Publication " />
+      <Button layoutX="488.0" layoutY="258.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="223.0" text="Manage Breaking News " />
+      <Button layoutX="499.0" layoutY="343.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="223.0" text="Monitor Editorial Progress " />
+      <Button layoutX="638.0" layoutY="538.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="156.0" text="Log Out" textFill="#da0b0b">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>
