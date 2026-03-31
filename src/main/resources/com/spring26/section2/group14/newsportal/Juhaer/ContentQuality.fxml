@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="560.0" prefWidth="656.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.com.practicecse213proj.ContentQualityController">
+   <children>
+      <TableView fx:id="tableviewfield" layoutX="10.0" layoutY="49.0" prefHeight="398.0" prefWidth="326.0">
+         <columns>
+            <TableColumn fx:id="submittedarticleTC" prefWidth="105.5999755859375" text="submitted article" />
+            <TableColumn fx:id="pendingreviewsTC" prefWidth="108.0" text="pending reviews" />
+            <TableColumn fx:id="RevisionrequestsTC" prefWidth="112.0" text="Revision requests" />
+            <TableColumn prefWidth="75.0" text="Column X" />
+            <TableColumn prefWidth="75.0" text="Column X" />
+         </columns>
+      </TableView>
+      <Label fx:id="outputlabelfield" layoutX="2.0" layoutY="451.0" prefHeight="18.0" prefWidth="570.0" />
+      <Text layoutX="360.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Article Details">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="360.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Headline:" />
+      <Text layoutX="360.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Author:" />
+      <Text layoutX="360.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Category:" />
+      <Text layoutX="357.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Content:" />
+      <TextField fx:id="headlinetextfield" layoutX="421.0" layoutY="49.0" />
+      <TextField fx:id="authortextfield" layoutX="421.0" layoutY="97.0" />
+      <TextArea fx:id="contentTextAreafield" layoutX="357.0" layoutY="195.0" prefHeight="111.0" prefWidth="230.0" />
+      <ComboBox fx:id="coboboxfield" layoutX="421.0" layoutY="139.0" prefWidth="150.0" />
+      <Text layoutX="360.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sources:" />
+      <TextArea fx:id="sourceTextAreafield" layoutX="360.0" layoutY="331.0" prefHeight="111.0" prefWidth="186.0" />
+      <Button layoutX="335.0" layoutY="477.0" mnemonicParsing="false" onAction="#checkOA" text="Check Quality" />
+      <Button layoutX="420.0" layoutY="477.0" mnemonicParsing="false" onAction="#requestOA" text="Request Revison" />
+      <Button layoutX="518.0" layoutY="477.0" mnemonicParsing="false" onAction="#ApproveOA" text="Approve for publishing" />
+   </children>
+</AnchorPane>
