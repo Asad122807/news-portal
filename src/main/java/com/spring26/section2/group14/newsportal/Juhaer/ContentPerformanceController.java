@@ -1,0 +1,31 @@
+package com.spring26.section2.group14.newsportal.Juhaer;
+
+public class ContentPerformanceController
+{
+    @javafx.fxml.FXML
+    private TableView TV;
+    @javafx.fxml.FXML
+    private Label OutputLabel;
+    @javafx.fxml.FXML
+    private TableColumn CategoryTC;
+    @javafx.fxml.FXML
+    private ComboBox CategoryCB;
+    @javafx.fxml.FXML
+    private TableColumn StatusTC;
+    @javafx.fxml.FXML
+    private TableColumn ViewsTC;
+    @javafx.fxml.FXML
+    private TableColumn ReadersTC;
+    @javafx.fxml.FXML
+    private TableColumn TitleTC;
+    @javafx.fxml.FXML
+    private ComboBox TimeCB;
+
+    @javafx.fxml.FXML
+    public void initialize() {
+    }
+
+    @javafx.fxml.FXML
+    public void GeneratePerformanceOA(ActionEvent actionEvent) {
+    }
+}
