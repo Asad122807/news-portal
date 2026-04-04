@@ -1,5 +1,8 @@
 package com.spring26.section2.group14.newsportal.Juhaer;
 
+import javafx.event.ActionEvent;
+import javafx.scene.control.*;
+
 public class EditorialController
 {
     @javafx.fxml.FXML
