@@ -55,7 +55,12 @@ public class ContentManagerController
     }
 
     @javafx.fxml.FXML
-    public void contentcalenderOA(ActionEvent actionEvent) {
+    public void contentcalenderOA(ActionEvent actionEvent) throws IOException{
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ContentCalender.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
     }
 
     @javafx.fxml.FXML

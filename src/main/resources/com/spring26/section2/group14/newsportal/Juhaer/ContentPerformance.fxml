@@ -8,7 +8,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="410.0" prefWidth="719.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spring26.section2.group14.newsportal.Juhaer.ContentPerformanceController">
    <children>
       <TableView fx:id="TV" layoutX="254.0" layoutY="57.0" prefHeight="200.0" prefWidth="435.0">
@@ -31,5 +30,6 @@
             <Font name="System Bold" size="22.0" />
          </font>
       </Label>
+      <Button layoutX="508.0" layoutY="352.0" mnemonicParsing="false" onAction="#DashOA" prefHeight="26.0" prefWidth="166.0" text="Back To Dashboard" />
    </children>
 </AnchorPane>
