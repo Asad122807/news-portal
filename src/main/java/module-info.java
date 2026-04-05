@@ -1,6 +1,7 @@
 module com.spring26.section2.group14.newsportal {
     requires javafx.controls;
     requires javafx.fxml;
+    requires javafx.graphics;
 
 
     opens com.spring26.section2.group14.newsportal to javafx.fxml;
