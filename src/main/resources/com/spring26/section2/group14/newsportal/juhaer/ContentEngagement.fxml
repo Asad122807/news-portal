@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="566.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spring26.section2.group14.newsportal.Juhaer.ContentEngagementController">
+<AnchorPane prefHeight="566.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spring26.section2.group14.newsportal.juhaer.ContentEngagementController">
    <children>
       <Label layoutX="6.0" layoutY="10.0" prefHeight="38.0" prefWidth="580.0" text="Improve Content Engagement Dashboard">
          <font>

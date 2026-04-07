@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spring26.section2.group14.newsportal.Juhaer.ContentPublishingController">
+<AnchorPane prefHeight="400.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spring26.section2.group14.newsportal.juhaer.ContentPublishingController">
    <children>
       <RadioButton fx:id="Checklist1" layoutX="25.0" layoutY="78.0" mnemonicParsing="false" text="1.Article is Approved(Status == Approved)" />
       <RadioButton fx:id="Checklist2" layoutX="25.0" layoutY="109.0" mnemonicParsing="false" text="2. All required sections completed" />

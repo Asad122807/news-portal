@@ -1,4 +1,4 @@
-package com.spring26.section2.group14.newsportal.Juhaer;
+package com.spring26.section2.group14.newsportal.juhaer;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;

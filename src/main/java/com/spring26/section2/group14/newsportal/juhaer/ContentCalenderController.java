@@ -1,5 +1,4 @@
-package com.spring26.section2.group14.newsportal.Juhaer;
-
+package com.spring26.section2.group14.newsportal.juhaer;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -9,35 +8,47 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class ContentPublishingController
+public class ContentCalenderController
 {
     @javafx.fxml.FXML
-    private Label OutputLabel;
+    private ComboBox PriorityCB;
     @javafx.fxml.FXML
     private TableView TV;
     @javafx.fxml.FXML
-    private RadioButton Checklist2;
+    private ComboBox CategoryCB;
     @javafx.fxml.FXML
-    private RadioButton Checklist1;
+    private Label conflictOutputLabel;
     @javafx.fxml.FXML
-    private TableColumn CategoryTC;
+    private TableColumn ReportTC;
     @javafx.fxml.FXML
-    private TextField AssignedTF;
+    private TextField TitleTF;
     @javafx.fxml.FXML
     private TableColumn TitleTC;
     @javafx.fxml.FXML
-    private DatePicker PubTimeTF;
+    private DatePicker DateDP;
+    @javafx.fxml.FXML
+    private DatePicker DeadlineDP;
     @javafx.fxml.FXML
     private TableColumn DeadlineTC;
     @javafx.fxml.FXML
-    private ComboBox CB;
+    private TableColumn PriorityTC;
+    @javafx.fxml.FXML
+    private ComboBox ReporterCB;
+    @javafx.fxml.FXML
+    private Label MissingOutputLabel;
+    @javafx.fxml.FXML
+    private DatePicker ContentCalenderDP;
 
     @javafx.fxml.FXML
     public void initialize() {
     }
 
     @javafx.fxml.FXML
-    public void ScheduleOA(ActionEvent actionEvent) {
+    public void ConfirmScheduleOA(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void ADDorEDITOA(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
@@ -47,6 +58,5 @@ public class ContentPublishingController
         Stage stage = (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
         stage.setScene(scene);
         stage.show();
-
     }
 }

@@ -1,4 +1,4 @@
-package com.spring26.section2.group14.newsportal.Juhaer;
+package com.spring26.section2.group14.newsportal.juhaer;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -8,51 +8,47 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class ContentCalenderController
+public class ContentEngagementController
 {
-    @javafx.fxml.FXML
-    private ComboBox PriorityCB;
     @javafx.fxml.FXML
     private TableView TV;
     @javafx.fxml.FXML
-    private ComboBox CategoryCB;
+    private TableColumn LikesTC;
     @javafx.fxml.FXML
-    private Label conflictOutputLabel;
+    private Label OutputLabel;
     @javafx.fxml.FXML
-    private TableColumn ReportTC;
+    private TextField ThumbnailURLTF;
     @javafx.fxml.FXML
-    private TextField TitleTF;
+    private TableColumn ReadingTimeTC;
     @javafx.fxml.FXML
-    private TableColumn TitleTC;
+    private TableColumn SharesTC;
     @javafx.fxml.FXML
-    private DatePicker DateDP;
+    private TextField TagsCB;
     @javafx.fxml.FXML
-    private DatePicker DeadlineDP;
+    private TableColumn CommentsTC;
     @javafx.fxml.FXML
-    private TableColumn DeadlineTC;
+    private TextField EditTF;
     @javafx.fxml.FXML
-    private TableColumn PriorityTC;
+    private ComboBox ArticleCB;
     @javafx.fxml.FXML
-    private ComboBox ReporterCB;
+    private TableColumn viewsTC;
     @javafx.fxml.FXML
-    private Label MissingOutputLabel;
-    @javafx.fxml.FXML
-    private DatePicker ContentCalenderDP;
+    private TextArea SummaryTA;
 
     @javafx.fxml.FXML
     public void initialize() {
     }
 
     @javafx.fxml.FXML
-    public void ConfirmScheduleOA(ActionEvent actionEvent) {
+    public void PreviewUpdateOA(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void ADDorEDITOA(ActionEvent actionEvent) {
+    public void RepublishORUpdateOA(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void DashOA(ActionEvent actionEvent)throws IOException {
+    public void DashOA(ActionEvent actionEvent) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ContentManager.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();

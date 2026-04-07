@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="607.0" prefWidth="815.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spring26.section2.group14.newsportal.Juhaer.EditorialController">
+<AnchorPane prefHeight="607.0" prefWidth="815.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spring26.section2.group14.newsportal.juhaer.EditorialController">
    <children>
       <Label layoutX="172.0" layoutY="10.0" prefHeight="56.0" prefWidth="294.0" text="View Guidelines">
          <font>

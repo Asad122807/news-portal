@@ -1,4 +1,5 @@
-package com.spring26.section2.group14.newsportal.Juhaer;
+package com.spring26.section2.group14.newsportal.juhaer;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -8,43 +9,53 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class ContentEngagementController
+public class EditorialController
 {
     @javafx.fxml.FXML
-    private TableView TV;
+    private TextField SearchTF;
     @javafx.fxml.FXML
-    private TableColumn LikesTC;
+    private TableView ManagementTV;
     @javafx.fxml.FXML
     private Label OutputLabel;
     @javafx.fxml.FXML
-    private TextField ThumbnailURLTF;
+    private ComboBox CategoryCB;
     @javafx.fxml.FXML
-    private TableColumn ReadingTimeTC;
+    private TextField CitationTF;
     @javafx.fxml.FXML
-    private TableColumn SharesTC;
+    private TextField TitleTF;
     @javafx.fxml.FXML
-    private TextField TagsCB;
+    private TableColumn TitleTC;
     @javafx.fxml.FXML
-    private TableColumn CommentsTC;
+    private TextField HeadTF;
     @javafx.fxml.FXML
-    private TextField EditTF;
+    private DatePicker EffectiveDateDP;
     @javafx.fxml.FXML
-    private ComboBox ArticleCB;
+    private TableColumn ArticleTC;
     @javafx.fxml.FXML
-    private TableColumn viewsTC;
+    private TextArea ExamplesTA;
     @javafx.fxml.FXML
-    private TextArea SummaryTA;
+    private TableColumn ViolationsFoundTC;
+    @javafx.fxml.FXML
+    private TextField FormattingTF;
+    @javafx.fxml.FXML
+    private TableView GuidelineTV;
+    @javafx.fxml.FXML
+    private TableColumn CategoryTC;
+    @javafx.fxml.FXML
+    private Label NotificationLabel;
+    @javafx.fxml.FXML
+    private TextField LangTF;
 
     @javafx.fxml.FXML
     public void initialize() {
     }
 
     @javafx.fxml.FXML
-    public void PreviewUpdateOA(ActionEvent actionEvent) {
+    public void SaveANdUpdateOA(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void RepublishORUpdateOA(ActionEvent actionEvent) {
+    public void SearchOA(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML

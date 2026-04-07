@@ -1,4 +1,4 @@
-package com.spring26.section2.group14.newsportal.Juhaer;
+package com.spring26.section2.group14.newsportal.juhaer;
 
 public class ContentQuality {
     private String headline,author,category,sources;

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spring26.section2.group14.newsportal.juhaer.User4LogInController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Text fill="#462827" layoutX="134.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please sign in your account" textAlignment="CENTER" wrappingWidth="331.08203125">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <TextField fx:id="usernametf" layoutX="150.0" layoutY="129.0" prefHeight="46.0" prefWidth="301.0" promptText="User Name">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="passpf" layoutX="150.0" layoutY="191.0" prefHeight="46.0" prefWidth="301.0" promptText="Password">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </PasswordField>
+            <Button layoutX="179.0" layoutY="268.0" mnemonicParsing="false" onAction="#loginbutton" prefHeight="35.0" prefWidth="243.0" text="Log in" textFill="#612121">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
