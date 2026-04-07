@@ -1,5 +1,7 @@
 package com.spring26.section2.group14.newsportal.juhaer;
 
+import javafx.event.ActionEvent;
+
 public class SubscriberController
 {
     @javafx.fxml.FXML
