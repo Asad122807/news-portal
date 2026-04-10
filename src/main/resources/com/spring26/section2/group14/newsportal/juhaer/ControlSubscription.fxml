@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="672.0" prefWidth="882.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spring26.section2.group14.newsportal.juhaer.ControlSubscriptionController">
+   <children>
+      <TextArea fx:id="AuthorTA" layoutX="43.0" layoutY="51.0" prefHeight="200.0" prefWidth="200.0" />
+      <Label layoutX="38.0" layoutY="25.0" prefHeight="26.0" prefWidth="120.0" text="Author Profile:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <PieChart fx:id="pie" layoutX="331.0" layoutY="14.0" prefHeight="75.0" prefWidth="194.0" title="VerifiedSources" />
+      <TableView fx:id="TV" layoutX="367.0" layoutY="190.0" prefHeight="200.0" prefWidth="508.0">
+        <columns>
+          <TableColumn fx:id="Author" prefWidth="120.0" text="Author" />
+          <TableColumn fx:id="Publisher" prefWidth="125.5999755859375" text="Publisher" />
+            <TableColumn fx:id="Publishers" prefWidth="129.5999755859375" text="Publishers" />
+            <TableColumn fx:id="Verifications" prefWidth="134.40008544921875" text="Verifications" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="SourceCB" layoutX="125.0" layoutY="433.0" prefWidth="150.0" />
+      <Label layoutX="57.0" layoutY="437.0" text="Source Filter" />
+      <ComboBox fx:id="KeyCB" layoutX="125.0" layoutY="475.0" prefWidth="150.0" />
+      <Label layoutX="43.0" layoutY="479.0" text="Keywords Filter" />
+      <TextField fx:id="UpdateTF" layoutX="68.0" layoutY="582.0" />
+      <Label layoutX="65.0" layoutY="532.0" prefHeight="39.0" prefWidth="278.0" text="Update Source Rating">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="UpdateCHK" layoutX="258.0" layoutY="543.0" mnemonicParsing="false" />
+      <CheckBox fx:id="FastCHK" layoutX="458.0" layoutY="535.0" mnemonicParsing="false" text="Fact Check indicators reviwed" />
+      <CheckBox fx:id="REFCHK" layoutX="458.0" layoutY="573.0" mnemonicParsing="false" text="References &amp; citations confirmed" />
+      <ButtonBar layoutX="548.0" layoutY="417.0" prefHeight="40.0" prefWidth="200.0" />
+    <Button layoutX="631.0" layoutY="390.0" mnemonicParsing="false" onAction="#UpdateOA" prefHeight="26.0" prefWidth="234.0" text="UPDATE RATING" />
+      <Button layoutX="126.0" layoutY="631.0" mnemonicParsing="false" onAction="#CHECKCREDIBILITYDETAILSOA" prefHeight="26.0" prefWidth="234.0" text="CHECK CREDIBILITY DETAILS" />
+      <Button layoutX="431.0" layoutY="631.0" mnemonicParsing="false" onAction="#SUBMITOA" prefHeight="26.0" prefWidth="234.0" text="SUBMIT FEEDBACK" />
+      <TextField fx:id="NameTF" layoutX="656.0" layoutY="38.0" />
+      <TextField layoutX="656.0" layoutY="89.0" />
+      <Label layoutX="573.0" layoutY="42.0" text="AuthorName" />
+      <Label fx:id="PasswordTF" layoutX="582.0" layoutY="93.0" text="Password" />
+   </children>
+</AnchorPane>
