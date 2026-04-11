@@ -11,50 +11,47 @@ import java.io.IOException;
 
 public class EditorialController
 {
+
     @javafx.fxml.FXML
-    private TextField SearchTF;
+    private TextField MetaTitleTF;
     @javafx.fxml.FXML
-    private TableView ManagementTV;
+    private TableView TV;
     @javafx.fxml.FXML
-    private Label OutputLabel;
+    private TextField FocusTF;
     @javafx.fxml.FXML
-    private ComboBox CategoryCB;
+    private TextField InternalLinksTF;
     @javafx.fxml.FXML
-    private TextField CitationTF;
+    private Label outputLabel2;
     @javafx.fxml.FXML
-    private TextField TitleTF;
+    private Label outputLabel1;
     @javafx.fxml.FXML
-    private TableColumn TitleTC;
+    private TableColumn FocusTC;
     @javafx.fxml.FXML
-    private TextField HeadTF;
+    private TableColumn SEOsuggestionsTC;
     @javafx.fxml.FXML
-    private DatePicker EffectiveDateDP;
+    private TextField HeadLineTF;
     @javafx.fxml.FXML
-    private TableColumn ArticleTC;
+    private Label outputLabel;
     @javafx.fxml.FXML
-    private TextArea ExamplesTA;
+    private TableColumn H2TC;
     @javafx.fxml.FXML
-    private TableColumn ViolationsFoundTC;
+    private TableColumn H1TC;
     @javafx.fxml.FXML
-    private TextField FormattingTF;
+    private TableColumn InternalLInksTC;
     @javafx.fxml.FXML
-    private TableView GuidelineTV;
+    private TextArea MetaDescriptionTA;
     @javafx.fxml.FXML
-    private TableColumn CategoryTC;
-    @javafx.fxml.FXML
-    private Label NotificationLabel;
-    @javafx.fxml.FXML
-    private TextField LangTF;
+    private ComboBox CB;
 
     @javafx.fxml.FXML
     public void initialize() {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void SaveANdUpdateOA(ActionEvent actionEvent) {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void SearchOA(ActionEvent actionEvent) {
     }
 
@@ -65,5 +62,25 @@ public class EditorialController
         Stage stage = (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
         stage.setScene(scene);
         stage.show();
+    }
+
+    @javafx.fxml.FXML
+    public void SaveAndUpdateOA(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void UpdatePreviewOA(ActionEvent actionEvent) {
+    }
+
+    @Deprecated
+    public void checkOA(ActionEvent actionEvent) {
+    }
+
+    @Deprecated
+    public void ApproveOA(ActionEvent actionEvent) {
+    }
+
+    @Deprecated
+    public void requestOA(ActionEvent actionEvent) {
     }
 }

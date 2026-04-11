@@ -10,7 +10,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="453.0" prefWidth="884.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spring26.section2.group14.newsportal.juhaer.EditorialController">
    <children>
       <Label layoutX="127.0" layoutY="14.0" prefHeight="54.0" prefWidth="286.0" text="Edit and Optimize for SEO">
@@ -56,5 +55,6 @@
       </Label>
       <Button layoutX="600.0" layoutY="331.0" mnemonicParsing="false" onAction="#UpdatePreviewOA" prefHeight="18.0" prefWidth="138.0" text="Update Preview" />
       <Button layoutX="748.0" layoutY="331.0" mnemonicParsing="false" onAction="#SaveAndUpdateOA" prefHeight="26.0" prefWidth="128.0" text="Save &amp; Update SEO" />
+      <Button layoutX="16.0" layoutY="376.0" mnemonicParsing="false" onAction="#DashOA" prefHeight="26.0" prefWidth="166.0" text="Back To Dashboard" />
    </children>
 </AnchorPane>
