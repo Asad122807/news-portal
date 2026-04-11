@@ -61,7 +61,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                com.spring26.section2.group14.newsportal/com.spring26.section2.group14.newsportal.HelloApplication
+                                com.spring26.section2.group14.newsportal/com.spring26.section2.group14.Sadman.HelloApplication
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>

@@ -1,4 +1,4 @@
-package com.spring26.section2.group14.newsportal;
+package com.spring26.section2.group14.Sadman;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;

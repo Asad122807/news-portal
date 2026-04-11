@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.DropdownButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spring26.section2.group14.Sadman.Breakingnews">
+   <children>
+      <TableView layoutX="71.0" layoutY="88.0" prefHeight="200.0" prefWidth="266.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Latest News" />
+          <TableColumn fx:id="tableviewfield" prefWidth="87.0" text="Most viewed" />
+            <TableColumn prefWidth="103.0" text="Todays News" />
+        </columns>
+      </TableView>
+      <Text layoutX="71.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search News:" />
+      <Text layoutX="66.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="News category:" />
+      <TextField fx:id="searchfield" layoutX="152.0" layoutY="23.0" />
+      <DropdownButton fx:id="categorydropdownfield" layoutX="174.0" layoutY="60.0">
+          <items>
+              <MenuItem text="Choice 1" />
+              <MenuItem text="Choice 2" />
+              <MenuItem text="Choice 3" />
+          </items>
+      </DropdownButton>
+      <Button layoutX="337.0" layoutY="21.0" mnemonicParsing="false" onAction="#searchOA" text="Search" />
+   </children>
+</AnchorPane>

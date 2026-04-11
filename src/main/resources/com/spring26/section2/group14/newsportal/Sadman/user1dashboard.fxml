@@ -8,7 +8,7 @@
 
 <AnchorPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.spring26.section2.group14.newsportal.user3dashboard"
+            fx:controller="com.spring26.section2.group14.Sadman.user1dashboard"
             prefHeight="400.0" prefWidth="600.0">
 
 </AnchorPane>
