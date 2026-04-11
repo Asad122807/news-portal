@@ -1,96 +1,61 @@
 package com.spring26.section2.group14.newsportal.juhaer;
-import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
-import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.time.LocalDate;
 
-public class ContentCalenderController {
-    @FXML
-    private ComboBox<String> PriorityCB;
-    @FXML
-    private TableView<ContentCalender> TV;
-    @FXML
-    private ComboBox<String> CategoryCB;
-    @FXML
+public class ContentCalenderController
+{
+    @javafx.fxml.FXML
+    private ComboBox PriorityCB;
+    @javafx.fxml.FXML
+    private TableView TV;
+    @javafx.fxml.FXML
+    private ComboBox CategoryCB;
+    @javafx.fxml.FXML
     private Label conflictOutputLabel;
-    @FXML
-    private TableColumn<ContentCalender, String> ReportTC;
-    @FXML
+    @javafx.fxml.FXML
+    private TableColumn ReportTC;
+    @javafx.fxml.FXML
     private TextField TitleTF;
-    @FXML
-    private TableColumn<ContentCalender,String> TitleTC;
-    @FXML
+    @javafx.fxml.FXML
+    private TableColumn TitleTC;
+    @javafx.fxml.FXML
     private DatePicker DateDP;
-    @FXML
+    @javafx.fxml.FXML
     private DatePicker DeadlineDP;
-    @FXML
-    private TableColumn<ContentCalender, LocalDate> DeadlineTC;
-    @FXML
-    private TableColumn<ContentCalender, String> PriorityTC;
-    @FXML
-    private ComboBox<String> ReporterCB;
-    @FXML
+    @javafx.fxml.FXML
+    private TableColumn DeadlineTC;
+    @javafx.fxml.FXML
+    private TableColumn PriorityTC;
+    @javafx.fxml.FXML
+    private ComboBox ReporterCB;
+    @javafx.fxml.FXML
     private Label MissingOutputLabel;
-    @FXML
+    @javafx.fxml.FXML
     private DatePicker ContentCalenderDP;
 
-    @FXML
+    @javafx.fxml.FXML
     public void initialize() {
-        PriorityCB.getItems().addAll("High", "Medium", "Low");
-        CategoryCB.getItems().addAll("Breaking News,Feature Story,Op-Ed,Local,Events,Sports");
-        ReportTC.setCellValueFactory(new PropertyValueFactory<>("ReportTC"));
-        TitleTC.setCellValueFactory(new PropertyValueFactory<>("TitleTC"));
-        DeadlineTC.setCellValueFactory(new PropertyValueFactory<>("DeadlineTC"));
-        PriorityTC.setCellValueFactory(new PropertyValueFactory<>("PriorityTC"));
-        ReporterCB.getItems().addAll("Staff Writer,Investigate Lead, Freelance Contributor,Senior Editor");
-
     }
 
-    @FXML
+    @javafx.fxml.FXML
     public void ConfirmScheduleOA(ActionEvent actionEvent) {
-        String Title = TitleTF.getText();
-        String Priority = PriorityCB.getItems().toString();
-        LocalDate Deadline = DeadlineDP.getValue();
-        String Report = ReporterCB.getItems().toString();
-
-        if (TitleTF.isEditable()) {
-            conflictOutputLabel.setText("Please Enter a Title");
-            return;
-
-
-        }
     }
 
-    @FXML
+    @javafx.fxml.FXML
     public void ADDorEDITOA(ActionEvent actionEvent) {
-        String selected = "";
-        if (selected != null) {
-            TitleTF.setText(selected.getClass().getName());
-            PriorityCB.setValue(selected.getClass().getName());
-            DeadlineDP.setValue(selected.getClass().getName().split());
-            ReporterCB.setValue(selected.getClass().getName());
-
-            TV.getItems().remove(selected);
-            conflictOutputLabel.setText("Editing selected row...");
-        } else {
-            conflictOutputLabel.setText("Select a row from the table to edit.");
-        }
     }
 
-
-    @FXML
-    public void DashOA(ActionEvent actionEvent) throws IOException {
+    @javafx.fxml.FXML
+    public void DashOA(ActionEvent actionEvent)throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ContentManager.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
-        Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        Stage stage = (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
         stage.setScene(scene);
         stage.show();
     }

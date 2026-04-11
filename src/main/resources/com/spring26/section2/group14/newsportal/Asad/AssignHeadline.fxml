@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="560.0" prefWidth="850.0"
+            xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.spring26.section2.group14.newsportal.Asad.AssignHeadlineController">
+
+    <children>
+
+        <Text layoutX="30.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Assign Headline" fill="RED">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Text>
+
+        <Text layoutX="30.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Workflow:" fill="#2f66b3" style="-fx-font-style: italic;">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+
+        <TableView fx:id="articleTableView" layoutX="30.0" layoutY="90.0" prefHeight="220.0" prefWidth="780.0">
+            <columns>
+                <TableColumn fx:id="serialNoColumn" prefWidth="90.0" text="Serial No" />
+                <TableColumn fx:id="articleTitleColumn" prefWidth="320.0" text="Article Title" />
+                <TableColumn fx:id="writerColumn" prefWidth="170.0" text="Writer" />
+                <TableColumn fx:id="headlineColumn" prefWidth="198.0" text="Current Headline" />
+            </columns>
+        </TableView>
+
+        <Text layoutX="30.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Headline:" />
+        <TextField fx:id="headlineTextField" layoutX="140.0" layoutY="338.0" prefHeight="30.0" prefWidth="420.0" promptText="Enter headline here" />
+
+        <Button layoutX="140.0" layoutY="390.0" mnemonicParsing="false" onAction="#saveHeadlineButton" prefHeight="32.0" prefWidth="120.0" text="Save Headline" />
+        <Button layoutX="275.0" layoutY="390.0" mnemonicParsing="false" onAction="#clearButton" prefHeight="32.0" prefWidth="100.0" text="Clear" />
+        <Button layoutX="390.0" layoutY="390.0" mnemonicParsing="false" onAction="#backButton" prefHeight="32.0" prefWidth="100.0" text="Back" />
+
+        <Label fx:id="statusLabel" layoutX="140.0" layoutY="445.0" prefHeight="20.0" prefWidth="500.0" text="Confirmation message" visible="false" />
+
+    </children>
+</AnchorPane>

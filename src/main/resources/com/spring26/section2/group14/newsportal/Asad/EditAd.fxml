@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="650.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spring26.section2.group14.newsportal.Asad.EditAdController">
+
+    <children>
+
+        <Text fill="RED" layoutX="373.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit Advertisement">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Text>
+
+        <Text fill="#2f66b3" layoutX="35.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select an advertisement and edit its details:">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+
+        <TableView fx:id="advertisementTableView" layoutX="35.0" layoutY="90.0" prefHeight="220.0" prefWidth="830.0">
+            <columns>
+                <TableColumn fx:id="serialNoColumn" prefWidth="85.0" text="Serial No" />
+                <TableColumn fx:id="adTitleColumn" prefWidth="220.0" text="Ad Title" />
+                <TableColumn fx:id="advertiserNameColumn" prefWidth="160.0" text="Advertiser Name" />
+                <TableColumn fx:id="platformColumn" prefWidth="120.0" text="Platform" />
+                <TableColumn fx:id="budgetColumn" prefWidth="110.0" text="Budget" />
+                <TableColumn fx:id="statusColumn" prefWidth="130.0" text="Status" />
+            </columns>
+        </TableView>
+
+        <Text layoutX="35.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Serial No:" />
+        <TextField fx:id="serialNoTextField" layoutX="150.0" layoutY="330.0" prefHeight="30.0" prefWidth="220.0" promptText="Enter serial number" />
+
+        <Text layoutX="35.0" layoutY="395.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ad Title:" />
+        <TextField fx:id="adTitleTextField" layoutX="150.0" layoutY="375.0" prefHeight="30.0" prefWidth="220.0" promptText="Enter ad title" />
+
+        <Text layoutX="35.0" layoutY="440.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Advertiser Name:" />
+        <TextField fx:id="advertiserNameTextField" layoutX="150.0" layoutY="420.0" prefHeight="30.0" prefWidth="220.0" promptText="Enter advertiser name" />
+
+        <Text layoutX="430.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Platform:" />
+        <TextField fx:id="platformTextField" layoutX="520.0" layoutY="330.0" prefHeight="30.0" prefWidth="220.0" promptText="Facebook / YouTube / Instagram" />
+
+        <Text layoutX="430.0" layoutY="395.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Budget:" />
+        <TextField fx:id="budgetTextField" layoutX="520.0" layoutY="375.0" prefHeight="30.0" prefWidth="220.0" promptText="Enter budget amount" />
+
+        <Text layoutX="430.0" layoutY="440.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status:" />
+        <TextField fx:id="statusTextField" layoutX="520.0" layoutY="420.0" prefHeight="30.0" prefWidth="220.0" promptText="Pending / Approved / Active" />
+
+        <Button layoutX="150.0" layoutY="485.0" mnemonicParsing="false" onAction="#updateButton" prefHeight="32.0" prefWidth="100.0" text="Update" />
+        <Button layoutX="265.0" layoutY="485.0" mnemonicParsing="false" onAction="#clearButton" prefHeight="32.0" prefWidth="100.0" text="Clear" />
+        <Button layoutX="770.0" layoutY="597.0" mnemonicParsing="false" onAction="#backButton" prefHeight="32.0" prefWidth="100.0" text="Back" />
+
+        <Label fx:id="statusLabel" layoutX="29.0" layoutY="538.0" prefHeight="20.0" prefWidth="806.0" text="Confirmation message" visible="false" />
+
+    </children>
+</AnchorPane>
