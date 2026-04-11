@@ -6,24 +6,65 @@
 <?import javafx.scene.text.Text?>
 
 <AnchorPane prefHeight="641.0" prefWidth="853.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spring26.section2.group14.newsportal.Asad.EdashboardController">
-   <children>
-      <Text layoutX="314.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Editor Dashboard" textAlignment="CENTER">
-         <font>
-            <Font size="24.0" />
-         </font>
-      </Text>
-      <Button layoutX="69.0" layoutY="110.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="223.0" text="Review Submitted Articles" />
-      <Button layoutX="69.0" layoutY="195.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="223.0" text="Edit Article Content " />
-      <Button layoutX="69.0" layoutY="283.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="223.0" text="Approve Article " />
-      <Button layoutX="69.0" layoutY="368.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="223.0" text="Reject Article " />
-      <Button layoutX="488.0" layoutY="110.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="223.0" text="Assign Headline " />
-      <Button layoutX="488.0" layoutY="180.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="223.0" text="Schedule Publication " />
-      <Button layoutX="488.0" layoutY="258.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="223.0" text="Manage Breaking News " />
-      <Button layoutX="499.0" layoutY="343.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="223.0" text="Monitor Editorial Progress " />
-      <Button layoutX="638.0" layoutY="538.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="156.0" text="Log Out" textFill="#da0b0b">
-         <font>
-            <Font name="System Bold" size="24.0" />
-         </font>
-      </Button>
-   </children>
+    <children>
+        <Text fill="#0a6586" layoutX="314.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Editor Dashboard" textAlignment="CENTER">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Text>
+
+        <Button layoutX="69.0" layoutY="110.0" mnemonicParsing="false" onAction="#ReviewArticlesButton" prefHeight="51.0" prefWidth="258.0" text="Review Submitted Articles" textFill="#0a6586">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Button>
+
+        <Button layoutX="69.0" layoutY="195.0" mnemonicParsing="false" onAction="#EditArticleButton" prefHeight="51.0" prefWidth="223.0" text="Edit Article Content " textFill="#0a6586">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Button>
+
+        <Button layoutX="69.0" layoutY="283.0" mnemonicParsing="false" onAction="#ApproveArticleButton" prefHeight="51.0" prefWidth="223.0" text="Approve Article " textFill="#0a6586">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Button>
+
+        <Button layoutX="69.0" layoutY="368.0" mnemonicParsing="false" onAction="#RejectArticleButton" prefHeight="51.0" prefWidth="223.0" text="Reject Article " textFill="#0a6586">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Button>
+
+        <Button layoutX="488.0" layoutY="110.0" mnemonicParsing="false" onAction="#AssignHeadlineButton" prefHeight="51.0" prefWidth="223.0" text="Assign Headline " textFill="#0a7194">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Button>
+
+        <Button layoutX="488.0" layoutY="180.0" mnemonicParsing="false" onAction="#SchedulePublicationButton" prefHeight="51.0" prefWidth="223.0" text="Schedule Publication " textFill="#0a6586">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Button>
+
+        <Button layoutX="465.0" layoutY="258.0" mnemonicParsing="false" onAction="#ManageBreakingNewsButton" prefHeight="51.0" prefWidth="246.0" text="Manage Breaking News " textFill="#0a6586">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Button>
+
+        <Button layoutX="464.0" layoutY="343.0" mnemonicParsing="false" onAction="#MonitorProgressButton" prefHeight="51.0" prefWidth="258.0" text="Monitor Editorial Progress " textFill="#0a6586">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Button>
+
+        <Button layoutX="638.0" layoutY="538.0" mnemonicParsing="false" onAction="#LogoutButton" prefHeight="51.0" prefWidth="156.0" text="Log Out" textFill="#da0b0b">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Button>
+    </children>
 </AnchorPane>

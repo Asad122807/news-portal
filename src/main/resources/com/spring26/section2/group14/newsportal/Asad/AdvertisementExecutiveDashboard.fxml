@@ -6,56 +6,58 @@
 <?import javafx.scene.text.Text?>
 
 <AnchorPane prefHeight="615.0" prefWidth="858.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spring26.section2.group14.newsportal.Asad.AEdashboardController">
-   <children>
-      <Text layoutX="241.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AdvertisementExecutiveDashboard" wrappingWidth="376.13671875">
-         <font>
-            <Font size="24.0" />
-         </font>
-      </Text>
-      <Button layoutX="63.0" layoutY="83.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="276.0" text=" Add New Advertisement " textFill="#3d9795">
-         <font>
-            <Font name="System Bold" size="18.0" />
-         </font>
-      </Button>
-      <Button layoutX="143.0" layoutY="154.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="202.0" text="Edit Advertisement" textFill="#3d9795">
-         <font>
-            <Font name="System Bold" size="18.0" />
-         </font>
-      </Button>
-      <Button layoutX="106.0" layoutY="220.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="221.0" text=" Approve Advertisement " textFill="#3d9795">
-         <font>
-            <Font name="System Bold" size="18.0" />
-         </font>
-      </Button>
-      <Button layoutX="106.0" layoutY="308.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="231.0" text="Schedule Advertisement " textFill="#3d9795">
-         <font>
-            <Font name="System Bold" size="18.0" />
-         </font>
-      </Button>
-      <Button layoutX="483.0" layoutY="92.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="239.0" text="Set Advertisement Pricing " textFill="#3d9795">
-         <font>
-            <Font name="System Bold" size="18.0" />
-         </font>
-      </Button>
-      <Button layoutX="431.0" layoutY="154.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="306.0" text="Remove Expired Advertisements" textFill="#3d9795">
-         <font>
-            <Font name="System Bold" size="18.0" />
-         </font>
-      </Button>
-      <Button layoutX="420.0" layoutY="220.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="317.0" text="View Advertisement Performance " textFill="#3d9795">
-         <font>
-            <Font name="System Bold" size="18.0" />
-         </font>
-      </Button>
-      <Button layoutX="443.0" layoutY="289.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="306.0" text="Generate Advertisement Report " textFill="#3d9795">
-         <font>
-            <Font name="System Bold" size="18.0" />
-         </font>
-      </Button>
-      <Button layoutX="602.0" layoutY="483.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="170.0" text="Log Out" textAlignment="CENTER" textFill="#bf1919">
-         <font>
-            <Font name="System Bold" size="18.0" />
-         </font>
-      </Button>
-   </children>
+    <children>
+        <Text layoutX="241.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Advertisement Executive Dashboard" wrappingWidth="396.13671875">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Text>
+
+        <Button layoutX="63.0" layoutY="83.0" mnemonicParsing="false" onAction="#AddNewAdvertisementButton" prefHeight="32.0" prefWidth="276.0" text=" Add New Advertisement " textFill="#3d9795">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Button>
+
+        <Button layoutX="100.0" layoutY="154.0" mnemonicParsing="false" onAction="#EditAdvertisementButton" prefHeight="39.0" prefWidth="202.0" text="Edit Advertisement" textFill="#3d9795">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Button>
+        <Button layoutX="106.0" layoutY="220.0" mnemonicParsing="false" onAction="#ApproveAdvertisementButton" prefHeight="50.0" prefWidth="276.0" text=" Approve Advertisement " textFill="#3d9795">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Button>
+        <Button layoutX="84.0" layoutY="308.0" mnemonicParsing="false" onAction="#ScheduleAdvertisementButton" prefHeight="39.0" prefWidth="276.0" text="Schedule Advertisement " textFill="#3d9795">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Button>
+        <Button layoutX="459.0" layoutY="93.0" mnemonicParsing="false" onAction="#SetPricingButton" prefHeight="39.0" prefWidth="264.0" text="Set Advertisement Pricing " textFill="#3d9795">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Button>
+        <Button layoutX="443.0" layoutY="154.0" mnemonicParsing="false" onAction="#RemoveExpiredButton" prefHeight="39.0" prefWidth="306.0" text="Remove Expired Advertisements" textFill="#3d9795">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Button>
+        <Button layoutX="420.0" layoutY="220.0" mnemonicParsing="false" onAction="#ViewPerformanceButton" prefHeight="39.0" prefWidth="317.0" text="View Advertisement Performance " textFill="#3d9795">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Button>
+        <Button layoutX="443.0" layoutY="289.0" mnemonicParsing="false" onAction="#GenerateReportButton" prefHeight="39.0" prefWidth="306.0" text="Generate Advertisement Report " textFill="#3d9795">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Button>
+        <Button layoutX="602.0" layoutY="483.0" mnemonicParsing="false" onAction="#LogoutButton" prefHeight="32.0" prefWidth="170.0" text="Log Out" textAlignment="CENTER" textFill="#bf1919">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Button>
+    </children>
 </AnchorPane>

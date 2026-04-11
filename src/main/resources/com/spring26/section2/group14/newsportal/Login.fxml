@@ -8,7 +8,7 @@
 <?import javafx.scene.text.Text?>
 
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spring26.section2.group14.newsportal.LoginController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spring26.section2.group14.newsportal.LoginController">
    <children>
       <Text fill="#462827" layoutX="134.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please sign in your account" textAlignment="CENTER" wrappingWidth="331.08203125">
          <font>
