@@ -69,41 +69,33 @@ public class ContentSourceController
 
     @javafx.fxml.FXML
     public void GenerateOA(ActionEvent actionEvent) {
-            // Clear old data
+
             ArticlePie.getData().clear();
             TrafficPie.getData().clear();
             EngagementPie.getData().clear();
             TV.getItems().clear();
 
-            // Sample Table Data
-            TV.getItems().addAll(
-                    new ContentSource("Article 1", 120, "4.5", "Gold"),
-                    new ContentSource("Article 2", 80, "4.0", "Silver"),
-                    new ContentSource("Article 3", 200, "5.0", "Platinum")
-            );
+            TV.getItems().addAll();
 
-            // Article Pie
             ArticlePie.getData().addAll(
                     new PieChart.Data("News", 50),
                     new PieChart.Data("Blogs", 30),
                     new PieChart.Data("Reports", 20)
             );
 
-            // Traffic Pie
             TrafficPie.getData().addAll(
                     new PieChart.Data("Facebook", 40),
                     new PieChart.Data("Google", 35),
                     new PieChart.Data("Direct", 25)
             );
 
-            // Engagement Pie
             EngagementPie.getData().addAll(
                     new PieChart.Data("Likes", 60),
                     new PieChart.Data("Shares", 25),
                     new PieChart.Data("Comments", 15)
             );
 
-            // Output message
+
             OutputLabel.setText("Performance Report Generated!");
         }
 

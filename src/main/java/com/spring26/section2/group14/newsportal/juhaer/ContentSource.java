@@ -48,7 +48,7 @@ public class ContentSource {
                 '}';
     }
 
-    public ContentSource(String meter, int despitation, String status, String date) {
+    public ContentSource(String meter, String despitation, String status,LocalDate date) {
         this.meter = meter;
         Despitation = despitation;
         Status = status;
