@@ -23,7 +23,7 @@
         </columns>
       </TableView>
       <Button layoutX="34.0" layoutY="297.0" mnemonicParsing="false" onAction="#ADDorEDITOA" text="Add/Edit" />
-      <Label layoutX="447.0" layoutY="33.0" prefHeight="30.0" prefWidth="238.0" text="Add/Edit ContentPlan">
+      <Label layoutX="447.0" layoutY="33.0" prefHeight="30.0" prefWidth="238.0" text="Content Calender">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>

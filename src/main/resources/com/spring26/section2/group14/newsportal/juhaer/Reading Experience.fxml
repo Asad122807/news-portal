@@ -9,7 +9,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="660.0" prefWidth="821.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spring26.section2.group14.newsportal.juhaer.ReadingExperienceController">
    <children>
       <Label layoutX="127.0" layoutY="22.0" prefHeight="54.0" prefWidth="346.0" text="Reading Experience">
@@ -39,5 +38,6 @@
             <Font size="19.0" />
          </font>
       </Label>
+      <Button layoutX="696.0" layoutY="451.0" mnemonicParsing="false" onAction="#BackToDashboardOA" text="BackToDashboard" />
    </children>
 </AnchorPane>

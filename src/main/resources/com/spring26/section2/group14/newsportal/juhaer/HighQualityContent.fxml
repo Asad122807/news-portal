@@ -9,7 +9,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="614.0" prefWidth="864.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spring26.section2.group14.newsportal.juhaer.HighQualityContentController">
    <children>
       <Label layoutX="176.0" layoutY="-8.0" prefHeight="94.0" prefWidth="340.0" text="High Quality Content">
@@ -43,7 +42,7 @@
       </Label>
       <ComboBox fx:id="TagCB" layoutX="336.0" layoutY="265.0" prefHeight="26.0" prefWidth="160.0" />
       <Button layoutX="528.0" layoutY="265.0" mnemonicParsing="false" onAction="#ExecuteBrowserOA" text="Execute Browser" />
-      <Label fx:id="OutputLabelitem" layoutX="668.0" layoutY="207.0" prefHeight="342.0" prefWidth="195.0">
+      <Label fx:id="OutputLabelitem" layoutX="668.0" prefHeight="342.0" prefWidth="195.0">
          <font>
             <Font size="14.0" />
          </font>
@@ -56,7 +55,6 @@
             <TableColumn fx:id="PublisherTC" prefWidth="134.4000244140625" text="Publisher" />
         </columns>
       </TableView>
-      <Button layoutX="496.0" layoutY="514.0" mnemonicParsing="false" onAction="#UpdatePreferencesOA" text="Update preferences" />
       <Label layoutY="220.0" prefHeight="26.0" prefWidth="81.0" text="Keywords:">
          <font>
             <Font size="14.0" />
@@ -64,5 +62,7 @@
       </Label>
       <Button layoutX="14.0" layoutY="514.0" mnemonicParsing="false" onAction="#RecommandationsOA" text="Recommandations" />
       <Button layoutX="556.0" layoutY="221.0" mnemonicParsing="false" onAction="#ItemDetailOA" text="Item Details" />
+      <Button layoutX="496.0" layoutY="514.0" mnemonicParsing="false" onAction="#UpdatePreferencesOA" text="Update preferences" />
+      <Button layoutX="686.0" layoutY="441.0" mnemonicParsing="false" onAction="#BackToDashboardOA" text="BackToDashboard" />
    </children>
 </AnchorPane>

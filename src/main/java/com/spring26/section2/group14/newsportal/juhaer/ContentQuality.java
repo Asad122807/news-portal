@@ -45,7 +45,7 @@ public class ContentQuality {
                 '}';
     }
 
-    public ContentQuality(String headline, String author, String category, String sources) {
+    public ContentQuality(String headline, String author, String category) {
         this.headline = headline;
         this.author = author;
         this.category = category;

@@ -33,7 +33,7 @@
         </columns>
       </TableView>
       <TextField fx:id="EditTF" layoutX="76.0" layoutY="60.0" />
-      <Label layoutX="14.0" layoutY="64.0" prefHeight="26.0" prefWidth="50.0" text="Edit" />
+      <Label layoutX="17.0" layoutY="59.0" prefHeight="26.0" prefWidth="50.0" text="Edit" />
       <Label layoutX="256.0" layoutY="64.0" prefHeight="26.0" prefWidth="82.0" text="Thumnail URL" />
       <TextField fx:id="ThumbnailURLTF" layoutX="338.0" layoutY="64.0" />
       <Label layoutX="258.0" layoutY="98.0" prefHeight="26.0" prefWidth="50.0" text="Tags" />

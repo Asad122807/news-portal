@@ -13,7 +13,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="672.0" prefWidth="882.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spring26.section2.group14.newsportal.juhaer.ControlSubscriptionController">
    <children>
       <TextArea fx:id="AuthorTA" layoutX="43.0" layoutY="51.0" prefHeight="200.0" prefWidth="200.0" />
@@ -52,5 +51,6 @@
       <TextField layoutX="656.0" layoutY="89.0" />
       <Label layoutX="573.0" layoutY="42.0" text="AuthorName" />
       <Label fx:id="PasswordTF" layoutX="582.0" layoutY="93.0" text="Password" />
+      <Button layoutX="718.0" layoutY="581.0" mnemonicParsing="false" onAction="#BacktoDashboardOA" prefHeight="26.0" prefWidth="158.0" text="BackTo Dashboard" />
    </children>
 </AnchorPane>

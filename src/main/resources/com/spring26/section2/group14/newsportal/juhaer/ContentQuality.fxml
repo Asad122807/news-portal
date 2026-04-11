@@ -11,7 +11,6 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane prefHeight="560.0" prefWidth="656.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spring26.section2.group14.newsportal.juhaer.EditorialController">
    <children>
       <TableView fx:id="tableviewfield" layoutX="10.0" layoutY="49.0" prefHeight="398.0" prefWidth="326.0">
@@ -24,7 +23,7 @@
          </columns>
       </TableView>
       <Label fx:id="outputlabelfield" layoutX="2.0" layoutY="451.0" prefHeight="18.0" prefWidth="570.0" />
-      <Text layoutX="360.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Article Details">
+      <Text layoutX="360.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Content Quality">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
@@ -42,5 +41,6 @@
       <Button layoutX="335.0" layoutY="477.0" mnemonicParsing="false" onAction="#checkOA" text="Check Quality" />
       <Button layoutX="420.0" layoutY="477.0" mnemonicParsing="false" onAction="#requestOA" text="Request Revison" />
       <Button layoutX="518.0" layoutY="477.0" mnemonicParsing="false" onAction="#ApproveOA" text="Approve for publishing" />
+      <Button layoutX="14.0" layoutY="490.0" mnemonicParsing="false" onAction="#DashOA" prefHeight="26.0" prefWidth="166.0" text="Back To Dashboard" />
    </children>
 </AnchorPane>

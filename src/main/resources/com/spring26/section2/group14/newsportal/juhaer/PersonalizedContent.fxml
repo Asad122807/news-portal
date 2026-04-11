@@ -13,7 +13,6 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="823.0" prefWidth="901.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spring26.section2.group14.newsportal.juhaer.PersonalizedContentController">
    <children>
       <TableView fx:id="EditorialTV" layoutX="14.0" layoutY="77.0" prefHeight="200.0" prefWidth="617.0">
@@ -40,8 +39,8 @@
             <Font size="26.0" />
          </font>
       </Label>
-      <PieChart fx:id="ReportPie" layoutX="687.0" prefHeight="400.0" prefWidth="213.0" title="Report" />
-      <Button layoutX="668.0" layoutY="417.0" mnemonicParsing="false" onAction="#GenerateOA" prefHeight="26.0" prefWidth="214.0" text="GENERATE PERFORAMNCE REPORT" />
+      <PieChart fx:id="ReportPie" layoutX="687.0" layoutY="39.0" prefHeight="400.0" prefWidth="213.0" title="Report" />
+      <Button layoutX="672.0" layoutY="446.0" mnemonicParsing="false" onAction="#GenerateOA" prefHeight="26.0" prefWidth="214.0" text="GENERATE PERFORAMNCE REPORT" />
       <ComboBox fx:id="intrestsCB" layoutX="14.0" layoutY="582.0" prefWidth="150.0" promptText="interests" />
       <ComboBox fx:id="readingCB" layoutX="14.0" layoutY="624.0" prefWidth="150.0" promptText="reading preferences" />
       <TextField fx:id="contentTF" layoutX="14.0" layoutY="698.0" />
@@ -58,5 +57,6 @@
       <ComboBox fx:id="CategoryCB" layoutX="497.0" layoutY="502.0" prefWidth="150.0" promptText="Category" />
       <DatePicker fx:id="DateDP" layoutX="680.0" layoutY="502.0" />
       <Label layoutX="40.0" layoutY="296.0" text="Image Tone" />
+      <Button layoutX="624.0" layoutY="763.0" mnemonicParsing="false" onAction="#BackToDashboardOA" text="BackToDashboard" />
    </children>
 </AnchorPane>

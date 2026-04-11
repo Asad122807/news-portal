@@ -10,9 +10,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="562.0" prefWidth="602.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spring26.section2.group14.newsportal.juhaer.WritersController">
+<AnchorPane prefHeight="562.0" prefWidth="634.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spring26.section2.group14.newsportal.juhaer.WritersController">
    <children>
-      <Label layoutX="88.0" layoutY="42.0" text="A Workflowdriven collaboration Interface">
+      <Label layoutX="88.0" layoutY="42.0" text="Writer Dashboard">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>
@@ -37,5 +37,6 @@
           <TableColumn minWidth="0.0" prefWidth="0.0" text="C2" />
         </columns>
       </TableView>
+      <Button layoutX="353.0" layoutY="469.0" mnemonicParsing="false" onAction="#DashOA" prefHeight="26.0" prefWidth="166.0" text="Back To Dashboard" />
    </children>
 </AnchorPane>
