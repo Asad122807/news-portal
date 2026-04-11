@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spring26.section2.group14.newsportal.UploadImage">
+   <children>
+      <Button layoutX="74.0" layoutY="261.0" mnemonicParsing="false" onAction="#uploadOA" text="Upload Image" />
+      <ImageView fx:id="imagefield" fitHeight="150.0" fitWidth="200.0" layoutX="74.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="uploadlabelfield" layoutX="74.0" layoutY="305.0" text="image has been uploaded verification." />
+   </children>
+</AnchorPane>

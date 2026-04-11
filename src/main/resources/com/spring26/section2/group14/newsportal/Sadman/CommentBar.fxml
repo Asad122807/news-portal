@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spring26.section2.group14.newsportal.CommentBar">
+   <children>
+      <ButtonBar layoutX="39.0" layoutY="181.0" prefHeight="136.0" prefWidth="431.0">
+        <buttons>
+            <TextArea fx:id="commentareafield" prefHeight="136.0" prefWidth="222.0" />
+            <Button layoutX="30.0" layoutY="66.0" mnemonicParsing="false" onAction="#commentOA" prefHeight="22.0" text="Comment" />
+          <Button mnemonicParsing="false" onAction="#postOA" prefHeight="22.0" text="post" />
+            <Button layoutX="170.0" layoutY="66.0" mnemonicParsing="false" onAction="#editOA" prefHeight="22.0" text="Edit" />
+        </buttons>
+      </ButtonBar>
+      <Text layoutX="243.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CommentBar">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

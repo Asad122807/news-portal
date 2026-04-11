@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="663.0" prefWidth="922.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spring26.section2.group14.newsportal.juhaer.ContentSourceController">
+   <children>
+      <Label fx:id="OutputLabel" layoutX="31.0" layoutY="14.0" prefHeight="117.0" prefWidth="270.0" />
+      <ComboBox layoutX="387.0" layoutY="60.0" prefWidth="150.0" promptText="All metrics" />
+      <ComboBox layoutX="571.0" layoutY="60.0" prefWidth="150.0" promptText="All" />
+      <ComboBox layoutX="387.0" layoutY="119.0" prefWidth="150.0" promptText="Soon,dates" />
+      <DatePicker fx:id="DP" layoutX="558.0" layoutY="119.0" />
+      <Label layoutX="610.0" layoutY="33.0" prefHeight="26.0" prefWidth="71.0" text="Despitation" />
+      <Label layoutX="426.0" layoutY="33.0" prefHeight="26.0" prefWidth="71.0" text="meter:" />
+      <Label layoutX="426.0" layoutY="92.0" prefHeight="26.0" prefWidth="71.0" text="Status" />
+      <Label layoutX="601.0" layoutY="92.0" prefHeight="26.0" prefWidth="71.0" text="Date" />
+      <TableView fx:id="TV" layoutX="112.0" layoutY="245.0" prefHeight="200.0" prefWidth="610.0">
+        <columns>
+          <TableColumn fx:id="NameTC" prefWidth="188.0" text="Name" />
+          <TableColumn fx:id="ViewsTC" prefWidth="99.20001220703125" text="Views" />
+            <TableColumn fx:id="RatingTC" prefWidth="136.79998779296875" text="Rating" />
+            <TableColumn fx:id="BadgeTC" prefWidth="185.60003662109375" text="Badge" />
+        </columns>
+      </TableView>
+      <PieChart fx:id="TrafficPie" layoutX="7.0" layoutY="462.0" prefHeight="186.0" prefWidth="150.0" title="Traffic Sources" />
+      <PieChart fx:id="EngagementPie" layoutX="217.0" layoutY="462.0" prefHeight="186.0" prefWidth="200.0" title="Engagement Trends" />
+      <PieChart fx:id="ArticlePie" layoutX="426.0" layoutY="462.0" prefHeight="186.0" prefWidth="200.0" title="Article Analytics" />
+      <Button layoutX="708.0" layoutY="542.0" mnemonicParsing="false" onAction="#GenerateOA" text="GENERATE PERFORMANCE REPORT" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,86 @@
+package com.spring26.section2.group14.newsportal.juhaer;
+
+import javafx.event.ActionEvent;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Scene;
+import javafx.scene.control.*;
+import javafx.stage.Stage;
+
+import java.io.IOException;
+
+public class EditorialController
+{
+
+    @javafx.fxml.FXML
+    private TextField MetaTitleTF;
+    @javafx.fxml.FXML
+    private TableView TV;
+    @javafx.fxml.FXML
+    private TextField FocusTF;
+    @javafx.fxml.FXML
+    private TextField InternalLinksTF;
+    @javafx.fxml.FXML
+    private Label outputLabel2;
+    @javafx.fxml.FXML
+    private Label outputLabel1;
+    @javafx.fxml.FXML
+    private TableColumn FocusTC;
+    @javafx.fxml.FXML
+    private TableColumn SEOsuggestionsTC;
+    @javafx.fxml.FXML
+    private TextField HeadLineTF;
+    @javafx.fxml.FXML
+    private Label outputLabel;
+    @javafx.fxml.FXML
+    private TableColumn H2TC;
+    @javafx.fxml.FXML
+    private TableColumn H1TC;
+    @javafx.fxml.FXML
+    private TableColumn InternalLInksTC;
+    @javafx.fxml.FXML
+    private TextArea MetaDescriptionTA;
+    @javafx.fxml.FXML
+    private ComboBox CB;
+
+    @javafx.fxml.FXML
+    public void initialize() {
+    }
+
+    @Deprecated
+    public void SaveANdUpdateOA(ActionEvent actionEvent) {
+    }
+
+    @Deprecated
+    public void SearchOA(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void DashOA(ActionEvent actionEvent) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ContentManager.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    @javafx.fxml.FXML
+    public void SaveAndUpdateOA(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void UpdatePreviewOA(ActionEvent actionEvent) {
+    }
+
+    @Deprecated
+    public void checkOA(ActionEvent actionEvent) {
+    }
+
+    @Deprecated
+    public void ApproveOA(ActionEvent actionEvent) {
+    }
+
+    @Deprecated
+    public void requestOA(ActionEvent actionEvent) {
+    }
+}

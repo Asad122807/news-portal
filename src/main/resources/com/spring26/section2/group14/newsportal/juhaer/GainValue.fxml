@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="515.0" prefWidth="977.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spring26.section2.group14.newsportal.juhaer.GainValueComtroller">
+   <children>
+      <TableView fx:id="PlatformTV" layoutX="14.0" layoutY="14.0" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="KeyMetricTC" prefWidth="99.20001220703125" text="Key Metric" />
+          <TableColumn fx:id="ValueTC" prefWidth="100.0" text="Value" />
+        </columns>
+      </TableView>
+      <TableView layoutX="14.0" layoutY="224.0" prefHeight="200.0" prefWidth="354.0">
+        <columns>
+          <TableColumn fx:id="AuthorTC" prefWidth="75.0" text="Author" />
+          <TableColumn fx:id="PublisherTC" prefWidth="75.0" text="Publisher" />
+            <TableColumn fx:id="PublisherRating" prefWidth="111.20001220703125" text="Publisher Rating" />
+            <TableColumn fx:id="StatusTC" prefWidth="91.19998779296873" text="Status" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="SourceCB" layoutX="586.0" layoutY="42.0" prefWidth="150.0" />
+      <Label layoutX="586.0" layoutY="24.0" text="Source Filter" />
+      <Label layoutX="586.0" layoutY="89.0" text="Update Source Rating" />
+      <ComboBox fx:id="UpdateCB" layoutX="586.0" layoutY="114.0" prefWidth="150.0" />
+      <Button layoutX="644.0" layoutY="160.0" mnemonicParsing="false" onAction="#SubmitOA" prefHeight="26.0" prefWidth="134.0" text="Submit Verification" />
+      <PieChart fx:id="PIE" layoutX="437.0" layoutY="258.0" prefHeight="240.0" prefWidth="474.0" title="USAGE &amp; FEEDBACK TREND" />
+   </children>
+</AnchorPane>
